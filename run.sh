@@ -27,6 +27,7 @@ fi
 
 export DISPLAY=:${displayNumber}.${screenNumber}
 
+mv -v /usr/src/app/tiles/* /data/
 echo
 cd /data
 node /usr/src/app/ -p 80 "$@" &
